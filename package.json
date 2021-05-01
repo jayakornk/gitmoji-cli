@@ -1,12 +1,12 @@
 {
-  "name": "gitmoji-cli",
+  "name": "bmoji-cli",
   "version": "4.0.0",
-  "description": "A gitmoji client for using emojis on commit messages.",
+  "description": "A bmoji client for using emojis on commit messages.",
   "engines": {
     "node": ">=12"
   },
   "bin": {
-    "gitmoji": "lib/cli.js"
+    "bmoji": "./lib/cli.js"
   },
   "files": [
     "lib"
@@ -17,7 +17,7 @@
     "coverage": "codecov",
     "flow": "flow",
     "lint": "prettier --check src/**/*.js",
-    "package": "pkg . --output ./bin/gitmoji --targets latest-linux-x64,latest-macos-x64,latest-win-x64",
+    "package": "pkg . --output ./bin/bmoji --targets latest-linux-x64,latest-macos-x64,latest-win-x64",
     "prepare": "husky install",
     "prepublishOnly": "yarn run lint && yarn run flow && yarn run test",
     "test": "jest"

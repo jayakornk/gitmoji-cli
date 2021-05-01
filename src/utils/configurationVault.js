@@ -6,7 +6,7 @@ import {
   EMOJI_COMMIT_FORMATS
 } from '../commands/config/prompts'
 
-export const config = new Conf({ projectName: 'gitmoji' })
+export const config = new Conf({ projectName: 'bmoji' })
 
 const setAutoAdd = (autoAdd: boolean) => {
   config.set(CONFIGURATION_PROMPT_NAMES.AUTO_ADD, autoAdd)
